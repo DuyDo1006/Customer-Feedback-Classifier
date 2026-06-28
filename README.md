@@ -12,7 +12,7 @@ Phân loại và phân tích phản hồi khách hàng MoMo từ Google Play Sto
 *Dashboard phân loại feedback theo thời gian thực với confidence score và keyword highlight / Real-time comment classification with confidence score & keyword importance*
 
 ![Model Performance Comparison](cfc_img/comparision.png)
-*So sánh hiệu quả LSTM vs ViSoBERT trên tập test / Model performance comparison: LSTM vs ViSoBERT*
+*So sánh hiệu quả trên tập test / Model performance comparison*
 
 ![Issue Distribution](cfc_img/distribution.png)
 *Phân bố 9 nhóm vấn đề của người dùng MoMo năm 2025 / Distribution of 9 issue categories in 2025*
@@ -202,21 +202,16 @@ Open `notebooks/2_model_training_and_evaluation.ipynb` on Google Colab **(enable
 ## 📁 Cấu trúc thư mục / Project Structure
 
 ```
-Customer Feedback Classifier/
+Customer-Feedback-Classifier/
 │
 ├── data/
 │   ├── raw/                          # momo_full.csv (~30,000 reviews)
 │   ├── labeled/                      # momo_train_labeled.xlsx (LLM-labeled & human-verified)
 │   └── processed/                    # momo_train.csv, momo_pred.csv, ket_qua_du_bao_final.xlsx
 │
-├── models/
-│   └── .gitkeep
-│
-├── notebooks/
-│   ├── 1_data_scraping.ipynb         # Data collection & preprocessing
-│   └── 2_model_training_and_evaluation.ipynb  # Model training, evaluation & dashboard
-│
 ├── cfc_img/                          # Screenshots for README
+├── 1_data_scraping.ipynb             # Data collection & preprocessing
+├── 2_model_training_and_evaluation.ipynb  # Model training, evaluation & dashboard
 ├── .gitignore
 ├── README.md
 └── requirements.txt
