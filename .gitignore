@@ -1,0 +1,18 @@
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files (nặng, không commit)
+data/
+
+# Model checkpoints (rất nặng)
+models/
+checkpoints/
+tb_logs/
+
+# Môi trường
+.env
